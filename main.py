@@ -1,1 +1,3 @@
-from 
+from menu import Menu
+
+Menu()

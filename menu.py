@@ -1,3 +1,5 @@
+from almacenamiento import Libro
+
 class Menu:
     cerrar = 0
     while (cerrar == 0):
@@ -11,30 +13,34 @@ class Menu:
         print("7.Añadir libro")
         print("8.Salir")
         print("----------------------------------")
-        num = input("Indica un numero la opción que requieras\n")
-
+        num = int(input("Indica un numero la opción que requieras\n"))
         match num:
             case 1:
-                print()
-                break
+                print(1)
+                libros = Libro()
+                print (libros)
             case 2:
-                print
-                break
+                print(2)
+
             case 3:
-                print
-                break
+                print(3)
+
             case 4:
-                print
-                break
+                print(4)
+
             case 5:
-                print
-                break
+                print(5)
+
             case 6:
-                print
-                break
+                print(6)
+
             case 7:
-                print
-                break
+                print(7)
+
             case 8:
-                print("¿Seguro que quieres cerrar el programa?\n")
-                cerrar = 1
+                res = input("¿Seguro que quieres cerrar el programa? Si o No\n")
+                if (res == "Si"):
+                    cerrar = 1
+                else:
+                    print("Volviendo al programa ...")
+    print("Cerrando programa...")

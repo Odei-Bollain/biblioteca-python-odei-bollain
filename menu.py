@@ -1,4 +1,4 @@
-from almacenamiento import Libro
+from almacenamiento import listar_libro
 
 class Menu:
     cerrar = 0
@@ -16,8 +16,7 @@ class Menu:
         num = int(input("Indica un numero la opción que requieras\n"))
         match num:
             case 1:
-                print(1)
-                libros = Libro()
+                libros = listar_libro()
                 print (libros)
             case 2:
                 print(2)

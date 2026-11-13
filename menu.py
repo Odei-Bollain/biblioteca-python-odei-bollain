@@ -1,4 +1,5 @@
 from almacenamiento import listar_libro
+from almacenamiento import listar_libro_disponible
 
 class Menu:
     cerrar = 0
@@ -19,8 +20,8 @@ class Menu:
                 libros = listar_libro()
                 print (libros)
             case 2:
-                print(2)
-
+                libros = listar_libro_disponible()
+                print (libros)
             case 3:
                 print(3)
 
